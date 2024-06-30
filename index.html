@@ -6,6 +6,9 @@
     <title>Tea-House</title>
     <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/019bec8745.js" crossorigin="anonymous"></script>
+
     <!-- cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,8 +41,34 @@
 
 </head>
 <body class="font-manrope">
-    <header>
-       
+    <header class="container mx-auto mt-7 lg:mt-16">
+      <div>
+        <div class="flex flex-col lg:flex-row-reverse gap-5 lg:gap-12">
+         <div class="flex-1 lg:mt-16 p-5 lg:p-0">
+          <img
+          src="images/banner.png"
+          class="w-72 md:w-auto md:max-w-sm" />
+          <div class="flex items-center bg-white drop-shadow-lg p-3 md:p-5 gap-3 w-44 md:w-60 -mt-16 lg:-ml-5">
+
+            <i class="fa-solid fa-star text-2xl md:text-4xl text-amber-400"></i>
+            <div>
+              <h2>5.00</h2>
+              <p class="font-semibold text-xs md:text-base">Trust Pilot Ratings</p>
+            </div>
+          </div>
+         </div>
+          <div class="flex-1 p-5 lg:p-0">
+            <h1 class="text-4xl md:text-6xl xl:text-7xl font-extrabold">It's good <br>
+              tea time at The <br> Tea House</h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+            </p>
+            <button class="p-5 rounded-md bg-gradient-to-r from-[#FF8938] to-[#F00] text-white text-base md:text-xl font-bold">Explore More
+              <img class="inline ml-3" src="images/arrow.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
