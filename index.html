@@ -36,6 +36,7 @@
             colors: {
               clifford: "#da373d",
               paragraph: "#777",
+              footer: "#494949",
             },
           },
         },
@@ -54,7 +55,9 @@
     <!-- header -->
     <header class="max-w-7xl mx-auto mt-7 lg:mt-16">
       <div>
-        <div class="flex justify-between flex-col lg:flex-row-reverse">
+        <div
+          class="flex justify-between flex-col-reverse items-center lg:flex-row-reverse"
+        >
           <div class="lg:mt-16 p-5">
             <img
               src="images/banner.png"
@@ -95,7 +98,7 @@
       </div>
     </header>
 
-    <main class="max-w-7xl mx-auto p-5">
+    <main class="max-w-7xl mx-auto p-5 md:px-20 lg:p-5">
       <!-- feature product -->
 
       <section class="mt-12 lg:mt-24 text-center">
@@ -237,7 +240,7 @@
         <div class="relative">
           <!-- next review review -->
           <div
-            class="p-8 lg:p-10 bg-white rounded-lg relative opacity-40 mb-16 z-10"
+            class="p-10 lg:p-10 bg-white rounded-lg relative opacity-40 mb-16 z-10"
           >
             <img
               class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white"
@@ -255,7 +258,7 @@
           </div>
           <!-- current review -->
           <div
-            class="p-8 lg:p-10 bg-white rounded-lg absolute top-32 lg:-left-28 xl:top-40 xl:-left-28 lg:w-[350px] xl:w-[430px] z-20"
+            class="p-10 lg:p-10 bg-white rounded-lg absolute top-32 lg:-left-28 xl:top-40 xl:-left-28 lg:w-[350px] xl:w-[430px] z-20"
           >
             <img
               class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white"
@@ -273,7 +276,9 @@
           </div>
 
           <!-- previous review -->
-          <div class="p-8 lg:p-10 bg-white rounded-lg relative opacity-40 z-10">
+          <div
+            class="p-10 lg:p-10 bg-white rounded-lg relative opacity-40 z-10"
+          >
             <img
               class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white"
               src="images/client.png"
@@ -358,6 +363,75 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer
+      class="bg-[#ff00001a] p-5 md:p-10 lg:px-36 xl:px-48 lg:py-24 lg:mt-24 mt-7"
+    >
+      <div
+        class="flex flex-col lg:flex-row items-center gap-5 justify-between mb-12 lg:mb-24"
+      >
+        <img class="w-16 h-16" src="./images/cup.png" alt="" />
+        <div class="flex flex-col lg:flex-row gap-5 lg:gap-10 items-center">
+          <p class="text-xl font-medium">Ready to get strated?</p>
+          <button
+            class="px-6 py-4 rounded-md bg-gradient-to-r from-[#FF8938] to-[#F00] text-white text-base md:text-xl font-bold"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div
+        class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center lg:text-left"
+      >
+        <nav class="flex flex-col gap-2 lg:gap-5">
+          <h6 class="text-xl font-semibold">Quick Links</h6>
+          <a class="link link-hover text-footer">Home</a>
+          <a class="link link-hover text-footer">About Us</a>
+          <a class="link link-hover text-footer">Insurance</a>
+          <a class="link link-hover text-footer">Privacy Policy</a>
+        </nav>
+        <nav class="flex flex-col gap-2 lg:gap-5">
+          <h6 class="text-xl font-semibold">Our Service</h6>
+          <a class="link link-hover text-footer">Life Insurance</a>
+          <a class="link link-hover text-footer">Car Insurance</a>
+          <a class="link link-hover text-footer">Health Insurance</a>
+          <a class="link link-hover text-footer">House Insurance</a>
+        </nav>
+        <nav class="flex flex-col gap-2 lg:gap-5">
+          <h6 class="text-xl font-semibold">Help</h6>
+          <a class="link link-hover text-footer">FAQs</a>
+          <a class="link link-hover text-footer">Contact Us</a>
+        </nav>
+        <form class="flex flex-col gap-2 lg:gap-5">
+          <h6 class="text-xl font-semibold">
+            Subscribe to our <br />
+            newsletter
+          </h6>
+          <fieldset class="form-control lg:w-80">
+            <label>
+              <span class="text-footer">Email address</span>
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                class="bg-transparent border-b-2 border-black outline-none"
+              />
+              <button
+                class="btn absolute rounded-full bg-gradient-to-r from-[#FF8938] to-[#F00] text-white -top-6"
+              >
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </fieldset>
+          <div class="flex gap-6 justify-center lg:justify-start">
+            <i class="fa-brands fa-facebook text-2xl"></i>
+            <i class="fa-brands fa-twitter text-2xl"></i>
+            <i class="fa-brands fa-square-instagram text-2xl"></i>
+          </div>
+        </form>
+      </div>
+      <p class="text-footer text-center mt-12 lg:mt-24">
+        © 2027 UIDesign.to - All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
